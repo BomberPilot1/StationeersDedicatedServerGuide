@@ -88,7 +88,8 @@ Properties of note are:
 - **ServerVisible**: Starts pining our Master server which will allow the server to show on the server list on the client. Default `true`
 - **GamePort**: The port the server will be listening on. Default `27016`
 - **ServerName**: The name of the server to be displayed on the server list. Default `Stationeers`
-- **Password**: An optional password to lock the server. Default `null`
+- **ServerPassword**: An optional password to lock the server. Default `null`
+- **AdminPassword**: An optional password to lock the server administration. Default `set`
 - **AutoSave**: turns on/off autosaving in game. Default `true`
 - **SaveInterval**: If AutoSave is on, the amount of seconds the game will save. Default `300`
 - **ServerMaxPlayers**: The maximin amount of players allowed on the server. Range 1 - 30. Default `10`
@@ -99,7 +100,7 @@ The settings arguments are separated by a space and are grouped in a key value p
 
 **Example:**
 ```bash
-$ ./rocketstation_DedicatedServer.x86_64 -settings ServerName "My Cool Game" StartLocalHost true ServerVisible true GamePort 27016 AutoSave true SaveInterval 300 Password abc123 ServerMaxPlayers 13 UPNPEnabled true
+$ ./rocketstation_DedicatedServer.x86_64 -settings ServerName "My Cool Game" StartLocalHost true ServerVisible true GamePort 27016 AutoSave true SaveInterval 300 ServerPassword "12345" AdminPassword "12345" ServerMaxPlayers 13 UPNPEnabled true
 ```
 
 ## Settings Path
